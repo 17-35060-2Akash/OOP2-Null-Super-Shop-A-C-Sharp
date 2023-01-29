@@ -39,8 +39,8 @@ namespace Null_Super_Shop_A_
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.usernameTextBox = new System.Windows.Forms.TextBox();
+            this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -53,7 +53,7 @@ namespace Null_Super_Shop_A_
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Bernard MT Condensed", 29.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(674, 143);
+            this.label1.Location = new System.Drawing.Point(1011, 275);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(226, 58);
             this.label1.TabIndex = 1;
@@ -64,7 +64,7 @@ namespace Null_Super_Shop_A_
             this.button1.BackColor = System.Drawing.SystemColors.Highlight;
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(745, 495);
+            this.button1.Location = new System.Drawing.Point(1131, 640);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(1, 0, 0, 0);
@@ -79,7 +79,7 @@ namespace Null_Super_Shop_A_
             this.button3.BackColor = System.Drawing.SystemColors.Highlight;
             this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(639, 435);
+            this.button3.Location = new System.Drawing.Point(1011, 590);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Padding = new System.Windows.Forms.Padding(1, 0, 0, 0);
@@ -87,6 +87,7 @@ namespace Null_Super_Shop_A_
             this.button3.TabIndex = 19;
             this.button3.Text = "Log In";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label3
             // 
@@ -94,7 +95,7 @@ namespace Null_Super_Shop_A_
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Monospac821 BT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(607, 336);
+            this.label3.Location = new System.Drawing.Point(843, 481);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(143, 32);
             this.label3.TabIndex = 18;
@@ -107,7 +108,7 @@ namespace Null_Super_Shop_A_
             this.label2.Cursor = System.Windows.Forms.Cursors.Default;
             this.label2.Font = new System.Drawing.Font("Monospac821 BT", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(615, 234);
+            this.label2.Location = new System.Drawing.Point(851, 379);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(127, 32);
             this.label2.TabIndex = 17;
@@ -116,25 +117,25 @@ namespace Null_Super_Shop_A_
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panel2.Location = new System.Drawing.Point(557, 388);
+            this.panel2.Location = new System.Drawing.Point(793, 533);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(469, 10);
+            this.panel2.Size = new System.Drawing.Size(591, 10);
             this.panel2.TabIndex = 16;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Desktop;
-            this.panel1.Location = new System.Drawing.Point(557, 288);
+            this.panel1.Location = new System.Drawing.Point(793, 433);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(468, 10);
+            this.panel1.Size = new System.Drawing.Size(591, 10);
             this.panel1.TabIndex = 15;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Null_Super_Shop_A_.Properties.Resources.images2;
-            this.pictureBox1.Location = new System.Drawing.Point(557, 234);
+            this.pictureBox1.Location = new System.Drawing.Point(793, 379);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(44, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -144,7 +145,7 @@ namespace Null_Super_Shop_A_
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Null_Super_Shop_A_.Properties.Resources.image3s;
-            this.pictureBox2.Location = new System.Drawing.Point(557, 336);
+            this.pictureBox2.Location = new System.Drawing.Point(793, 481);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(44, 36);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -157,39 +158,39 @@ namespace Null_Super_Shop_A_
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Bernard MT Condensed", 35.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(95, 119);
+            this.label4.Location = new System.Drawing.Point(1457, 825);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(379, 70);
             this.label4.TabIndex = 23;
             this.label4.Text = "Null Super Shop";
             // 
-            // textBox1
+            // usernameTextBox
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(766, 234);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(260, 32);
-            this.textBox1.TabIndex = 24;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.usernameTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.usernameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameTextBox.Location = new System.Drawing.Point(1002, 379);
+            this.usernameTextBox.Multiline = true;
+            this.usernameTextBox.Name = "usernameTextBox";
+            this.usernameTextBox.Size = new System.Drawing.Size(382, 32);
+            this.usernameTextBox.TabIndex = 24;
+            this.usernameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox2
+            // passwordTextBox
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(764, 340);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(260, 32);
-            this.textBox2.TabIndex = 25;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.passwordTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.passwordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordTextBox.Location = new System.Drawing.Point(1000, 485);
+            this.passwordTextBox.Multiline = true;
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.Size = new System.Drawing.Size(384, 32);
+            this.passwordTextBox.TabIndex = 25;
+            this.passwordTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::Null_Super_Shop_A_.Properties.Resources._97334667_user_icon_human_person_symbol_avatar_login_sign_circle_button_with_soft_color_gradient_background_ve;
-            this.pictureBox3.Location = new System.Drawing.Point(713, 26);
+            this.pictureBox3.Location = new System.Drawing.Point(1071, 162);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(141, 90);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -202,10 +203,10 @@ namespace Null_Super_Shop_A_
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Null_Super_Shop_A_.Properties.Resources._1624843;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1049, 553);
+            this.ClientSize = new System.Drawing.Size(1848, 1055);
             this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.passwordTextBox);
+            this.Controls.Add(this.usernameTextBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -217,7 +218,8 @@ namespace Null_Super_Shop_A_
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Null Shuper Shop";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -238,8 +240,8 @@ namespace Null_Super_Shop_A_
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox usernameTextBox;
+        private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

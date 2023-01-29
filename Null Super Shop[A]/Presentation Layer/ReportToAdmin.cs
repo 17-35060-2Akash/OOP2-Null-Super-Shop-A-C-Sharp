@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Null_Super_Shop_A_
+namespace Null_Super_Shop_A_.Presentation_Layer
 {
-    public partial class Form1 : Form
+    public partial class ReportToAdmin : Form
     {
-        public Form1()
+        public ReportToAdmin()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }
